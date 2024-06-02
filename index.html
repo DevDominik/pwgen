@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Jelszó generátor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Jelszó generátor</h1>
+    <div class="container">
+        <p id="jelszo">P4$$50rd!</p>
+        <button id="masol">Másolás</button>
+    </div>
+    <div class="container">
+        <div class="hosszusag">
+            <label for="lblHossusag">Karakterhosszúság</label>
+            <p id="pHosszusag">0</p>
+        </div>
+        <input type="range" id="sliHosszusag" min="1" max="50">
+        <label>
+            <input type="checkbox" id="nagy" checked>
+            Tartalmazzon nagy betűket
+        </label>
+        <label>
+            <input type="checkbox" id="kis" checked>
+            Tartalmazzon kisbetűket
+        </label>
+        <label>
+            <input type="checkbox" id="szam" checked>
+            Tartalmazzon számokat
+        </label>
+        <label>
+            <input type="checkbox" id="specialis" checked>
+            Tartalmazzon speciális karaktereket
+        </label>
+        <div class="erosseg">
+            <p>Jelső erőssége</p>
+            <p id="erossegJelzo"></p>
+        </div>
+        <button id="generalas">Generálás</button>
+    </div>
+</body>
+</html>

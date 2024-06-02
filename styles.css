@@ -1,0 +1,110 @@
+:root {
+    --hatter: #111016;
+    --felszin: #24232b;
+    --felszin2: #18171f;
+    --elsodleges: #f0d573;
+    --szoveg: #e6e5ea;
+    --nemaktiv: #54535b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--hatter);
+    color:  var(--szoveg);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--nemaktiv);
+    font-size: 1.8rem;
+}
+
+.container {
+    display: flex;
+
+    background-color: var(--felszin);
+    border-radius: 0.1rem;
+    padding: 1.5rem;
+
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container:nth-of-type(1) {
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#jelszo {
+    color: var(--nemaktiv);
+    font-size: 2rem;
+    line-break: anywhere;
+}
+
+#jelszo+button {
+    color: var(--elsodleges);
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(2) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.hosszusag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    accent-color: var(--elsodleges);
+}
+
+.erosseg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--felszin2);
+    color: var(--nemaktiv);
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+#erossegIzek {
+    letter-spacing: 0.25rem;
+}
+
+#generalas {
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--elsodleges);
+    color: var(--felszin2);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.container #masol {
+    font-size: 90%;
+}
